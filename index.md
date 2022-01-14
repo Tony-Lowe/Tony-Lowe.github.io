@@ -1,4 +1,4 @@
-# Tonylowe
+# Tony Lowe
 tonylowe001031@gmail.com｜江苏徐州
 ## 学习情况
 中国矿业大学（211）

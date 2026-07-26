@@ -2,131 +2,97 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: 吳健雄
-  given: Shiung Wu
-  family: Chien
-  pronunciation: Chien Shiung Wu
-  pronouns: she/her
+  display: Minxing Luo
+  given: Minxing
+  family: Luo
 status:
-  icon: "☕️"
-role: Director of Cloud Infrastructure
+  icon: "🔬"
+role: Researcher in Generative AI and Computer Vision
 bio: >
-  I am currently Director of Cloud Infrastructure at GenCoin where I am leading
-  teams on edge computing, deep sea data center architecture, and hivemind optimization.
+  I work on generative vision, with a focus on diffusion models, visual text
+  generation, image editing, and text-aware image super-resolution. My work
+  aims to make generated and enhanced imagery more structurally faithful and
+  visually convincing.
 affiliations:
-  - name: GenCoin
-    url: https://www.example.com/
+  - name: Ming Team, Ant Group
 links:
   - icon: at-symbol
-    url: mailto:your-email@example.com
+    url: mailto:mxluocv@gmail.com
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/MakeOwnable
   - icon: brands/github
-    url: https://github.com/gcushen
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://github.com/Tony-Lowe
+    label: GitHub
+  - icon: brands/google-scholar
+    url: https://scholar.google.com/citations?user=cpIySUoAAAAJ&hl=en
+    label: Google Scholar
 education:
-  - degree: PhD Artificial Intelligence
-    institution: Stanford University
-    start: 2016-01-01
-    end: 2020-12-31
+  - degree: MSc in Computer Science
+    institution: Nankai University
+    start: 2023-09-01
+    end: 2026-06-30
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - degree: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    start: 2016-01-01
-    end: 2020-12-31
+      GPA: 3.38/4.00. Advised by Prof. Jian Yang in the Visual Computing and Intellectual Perception Lab.
+  - degree: BSc in Information Security
+    institution: China University of Mining and Technology
+    start: 2019-09-01
+    end: 2023-06-30
     summary: |
-      GPA: 3.8/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - degree: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    start: 2016-01-01
-    end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      GPA: 3.85/4.00. Ranked 7/129.
 experience:
-  - role: Director of Cloud Infrastructure
-    org: GenCoin
-    start: 2021-01-01
+  - role: Research Intern
+    org: Ming Team, Ant Group
+    start: 2026-01-01
     summary: |
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - role: Backend Software Engineer
-    org: X
-    start: 2016-01-01
-    end: 2020-12-31
+      Conducting research in generative AI.
+  - role: Research Intern
+    org: Imaging Algorithm Center, vivo
+    start: 2025-03-01
+    end: 2025-12-31
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Led the development of TIGER, a diffusion-based, text-aware image super-resolution framework accepted to CVPR 2026.
+      - Built real-world data pipelines and datasets for text image enhancement.
+  - role: Master's Researcher
+    org: Visual Computing and Intellectual Perception Lab, Nankai University
+    start: 2023-06-01
+    end: 2026-06-30
+    summary: |
+      Researched visual text generation, diffusion-based image editing, and visual localization.
 skills:
-  - name: Technical Skills
+  - name: Research Areas
     items:
-      - label: Python
+      - label: Generative Vision
+        level: 5
+      - label: Diffusion Models
+        level: 5
+      - label: Visual Text Generation
+        level: 5
+      - label: Image Editing & Enhancement
         level: 4
-      - label: RStudio
-        level: 5
-      - label: PyTorch
-        level: 2
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
+  - name: Technical Skills
+    color: '#4f46e5'
+    color_border: '#818cf8'
     items:
-      - label: Hiking
-        level: 3
-      - label: Cats
+      - label: Python & PyTorch
         level: 5
-      - label: Photography
+      - label: C++
+        level: 4
+      - label: LaTeX
         level: 4
 languages:
   - name: English
     level: 5
   - name: Chinese
-    level: 4
-  - name: Portuguese
-    level: 1
+    level: 5
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: brands/coursera
+  - title: National Scholarship
+    date: '2021-12-01'
+    awarder: Ministry of Education of China
+    icon: trophy
     summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: brands/edx
+      Received in the 2019–2020 and 2020–2021 academic years; awarded to the top 0.2% of students nationwide.
+  - title: Interdisciplinary Contest in Modeling — Honorable Mention
+    date: '2022-05-01'
+    awarder: COMAP
+    icon: trophy
     summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: brands/datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+      Honored for interdisciplinary modeling and problem-solving.

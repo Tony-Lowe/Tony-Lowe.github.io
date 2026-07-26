@@ -32,20 +32,17 @@ sections:
           venue: CVPR 2026
           description: Two-stage scene text image super-resolution with glyph structure guidance.
           image: media/publications/tiger-pipeline.png
-          image_style: "width: 135%; left: -16%; top: -5%;"
           paper_url: https://arxiv.org/abs/2510.21590
         - title: Beyond Flat Text
           venue: ICCV Workshops 2025
           description: Dual self-inherited guidance for visual text generation.
           image: media/publications/stgen-pipeline.png
-          image_style: "width: 112%; left: -6%; top: -6%;"
           paper_url: https://arxiv.org/abs/2501.05892
           code_url: https://github.com/Tony-Lowe/STGen
         - title: RotationDrag
           venue: arXiv 2024
           description: Point-based image editing with rotated diffusion features.
           image: media/publications/rotationdrag-pipeline.png
-          image_style: "width: 260%; left: -100%; top: -2%;"
           paper_url: https://arxiv.org/abs/2401.06442
           code_url: https://github.com/Tony-Lowe/RotationDrag
   - block: experience
@@ -54,10 +51,6 @@ sections:
     design:
       date_format: 'January 2006'
       is_education_first: true
-  - block: skills
-    content:
-      title: Research & Technical Skills
-      username: me
   - block: awards
     content:
       title: Selected Honors

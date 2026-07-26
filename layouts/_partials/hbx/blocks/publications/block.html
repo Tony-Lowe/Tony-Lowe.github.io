@@ -22,12 +22,11 @@
       {{ $itemTitle := index . "title" }}
       {{ $imagePath := index . "image" }}
       {{ $image := resources.Get $imagePath }}
-      {{ $imageStyle := index . "image_style" }}
       {{ $paperURL := index . "paper_url" }}
       {{ $codeURL := index . "code_url" }}
-      <article class="grid overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-900 md:grid-cols-[17rem_1fr]">
+      <article class="grid overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-900 md:grid-cols-[22rem_1fr]">
         <a class="relative min-h-48 overflow-hidden bg-white" href="{{ $paperURL }}" target="_blank" rel="noopener" aria-label="Open paper: {{ $itemTitle }}">
-          {{ with $image }}<img class="absolute max-w-none" src="{{ .RelPermalink }}" alt="Pipeline diagram from {{ $itemTitle }}" style="{{ $imageStyle | safeCSS }}">{{ end }}
+          {{ with $image }}<img class="absolute h-full w-full object-contain p-2" src="{{ .RelPermalink }}" alt="Pipeline diagram from {{ $itemTitle }}">{{ end }}
         </a>
         <div class="flex flex-col justify-center p-6">
           <p class="mb-2 text-sm font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-300">{{ index . "venue" }}</p>

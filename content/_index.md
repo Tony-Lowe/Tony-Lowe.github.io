@@ -22,15 +22,32 @@ sections:
       avatar:
         size: large
         shape: rounded
-  - block: markdown
+  - block: publications
     content:
       title: Selected Publications
-      text: |
-        - **Restore Text First, Enhance Image Later: Two-Stage Scene Text Image Super-Resolution with Glyph Structure Guidance**. *CVPR 2026*. [Paper](https://arxiv.org/abs/2510.21590)
-        - **Beyond Flat Text: Dual Self-inherited Guidance for Visual Text Generation**. *ICCV Workshops 2025*. [Paper](https://doi.org/10.1109/ICCVW69036.2025.00203)
-        - **RotationDrag: Point-based Image Editing with Rotated Diffusion Features**. *arXiv 2024*. [Paper](https://arxiv.org/abs/2401.06442)
-
-        For the complete list, visit my [Google Scholar profile](https://scholar.google.com/citations?user=cpIySUoAAAAJ&hl=en).
+      subtitle: Each thumbnail is an architecture figure from the corresponding paper.
+      scholar_url: https://scholar.google.com/citations?user=cpIySUoAAAAJ&hl=en
+      items:
+        - title: Restore Text First, Enhance Image Later
+          venue: CVPR 2026
+          description: Two-stage scene text image super-resolution with glyph structure guidance.
+          image: media/publications/tiger-pipeline.png
+          image_style: "width: 135%; left: -16%; top: -5%;"
+          paper_url: https://arxiv.org/abs/2510.21590
+        - title: Beyond Flat Text
+          venue: ICCV Workshops 2025
+          description: Dual self-inherited guidance for visual text generation.
+          image: media/publications/stgen-pipeline.png
+          image_style: "width: 112%; left: -6%; top: -6%;"
+          paper_url: https://arxiv.org/abs/2501.05892
+          code_url: https://github.com/Tony-Lowe/STGen
+        - title: RotationDrag
+          venue: arXiv 2024
+          description: Point-based image editing with rotated diffusion features.
+          image: media/publications/rotationdrag-pipeline.png
+          image_style: "width: 260%; left: -100%; top: -2%;"
+          paper_url: https://arxiv.org/abs/2401.06442
+          code_url: https://github.com/Tony-Lowe/RotationDrag
   - block: experience
     content:
       username: me
@@ -45,8 +62,10 @@ sections:
     content:
       title: Selected Honors
       username: me
-  - block: languages
+  - block: markdown
     content:
       title: Languages
-      username: me
+      text: |
+        **Chinese** — Native speaker<br>
+        **English** — C1 (PTE Academic: 88)
 ---

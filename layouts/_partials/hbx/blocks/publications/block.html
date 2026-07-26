@@ -1,0 +1,44 @@
+{{/* Custom publication cards for the homepage. */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+{{ $title := index $content "title" | default "Selected Publications" }}
+{{ $subtitle := index $content "subtitle" }}
+{{ $items := index $content "items" | default slice }}
+{{ $scholarURL := index $content "scholar_url" }}
+
+<div class="mx-auto w-full max-w-6xl px-6">
+  <div class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+    <div>
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">{{ $title }}</h2>
+      {{ with $subtitle }}<p class="mt-2 text-sm text-gray-600 dark:text-gray-300">{{ . }}</p>{{ end }}
+    </div>
+    {{ with $scholarURL }}<a class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-300" href="{{ . }}" target="_blank" rel="noopener">View all on Google Scholar →</a>{{ end }}
+  </div>
+
+  <div class="space-y-6">
+    {{ range $items }}
+      {{ $itemTitle := index . "title" }}
+      {{ $imagePath := index . "image" }}
+      {{ $image := resources.Get $imagePath }}
+      {{ $imageStyle := index . "image_style" }}
+      {{ $paperURL := index . "paper_url" }}
+      {{ $codeURL := index . "code_url" }}
+      <article class="grid overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-900 md:grid-cols-[17rem_1fr]">
+        <a class="relative min-h-48 overflow-hidden bg-white" href="{{ $paperURL }}" target="_blank" rel="noopener" aria-label="Open paper: {{ $itemTitle }}">
+          {{ with $image }}<img class="absolute max-w-none" src="{{ .RelPermalink }}" alt="Pipeline diagram from {{ $itemTitle }}" style="{{ $imageStyle | safeCSS }}">{{ end }}
+        </a>
+        <div class="flex flex-col justify-center p-6">
+          <p class="mb-2 text-sm font-semibold uppercase tracking-wide text-primary-600 dark:text-primary-300">{{ index . "venue" }}</p>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white">{{ index . "title" }}</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-300">{{ index . "description" }}</p>
+          <div class="mt-5 flex flex-wrap gap-3">
+            {{ with $paperURL }}<a class="rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-700" href="{{ . }}" target="_blank" rel="noopener">Paper</a>{{ end }}
+            {{ with $codeURL }}<a class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 transition hover:border-primary-500 hover:text-primary-700 dark:border-gray-600 dark:text-gray-100 dark:hover:border-primary-300 dark:hover:text-primary-200" href="{{ . }}" target="_blank" rel="noopener">Code on GitHub</a>{{ end }}
+          </div>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</div>

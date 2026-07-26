@@ -7,7 +7,7 @@ name:
   family: Luo
 status:
   icon: "🔬"
-role: MSc Graduate in Computer Science | Generative AI & Computer Vision
+role: Research Intern at Ming Team, Ant Group | Recent MSc Graduate
 bio: >
   I am a recent MSc graduate from Nankai University, interested in generative
   vision, diffusion models, visual text generation, image editing, and
@@ -76,11 +76,6 @@ skills:
         level: 4
       - label: LaTeX
         level: 4
-languages:
-  - name: English
-    level: 5
-  - name: Chinese
-    level: 5
 awards:
   - title: National Scholarship
     date: '2021-12-01'

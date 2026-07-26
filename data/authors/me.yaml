@@ -7,12 +7,12 @@ name:
   family: Luo
 status:
   icon: "🔬"
-role: Researcher in Generative AI and Computer Vision
+role: MSc Graduate in Computer Science | Generative AI & Computer Vision
 bio: >
-  I work on generative vision, with a focus on diffusion models, visual text
-  generation, image editing, and text-aware image super-resolution. My work
-  aims to make generated and enhanced imagery more structurally faithful and
-  visually convincing.
+  I am a recent MSc graduate from Nankai University, interested in generative
+  vision, diffusion models, visual text generation, image editing, and
+  text-aware image super-resolution. My work aims to make generated and
+  enhanced imagery more structurally faithful and visually convincing.
 affiliations:
   - name: Ming Team, Ant Group
 links:

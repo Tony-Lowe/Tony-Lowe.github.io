@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Generative AI and Computer Vision Researcher"
+    tagline: "MSc Graduate in Generative AI and Computer Vision"
     # Site meta description for search engines and social sharing
-    description: "Personal academic homepage of Minxing Luo, working on generative vision, diffusion models, and visual text generation."
+    description: "Personal academic homepage of Minxing Luo, a recent MSc graduate interested in generative vision, diffusion models, and visual text generation."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: ""                         # Twitter/X handle for Twitter Cards (without @)

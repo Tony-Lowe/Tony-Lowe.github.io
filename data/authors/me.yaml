@@ -31,13 +31,11 @@ education:
     start: 2023-09-01
     end: 2026-06-30
     summary: |
-      GPA: 3.38/4.00. Advised by Prof. Jian Yang in the Visual Computing and Intellectual Perception Lab.
+      Advised by Prof. Jian Yang in the Visual Computing and Intellectual Perception Lab.
   - degree: BSc in Information Security
     institution: China University of Mining and Technology
     start: 2019-09-01
     end: 2023-06-30
-    summary: |
-      GPA: 3.85/4.00. Ranked 7/129.
 experience:
   - role: Research Intern
     org: Ming Team, Ant Group

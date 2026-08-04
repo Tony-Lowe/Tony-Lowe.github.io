@@ -22,6 +22,9 @@ links:
   - icon: brands/github
     url: https://github.com/Tony-Lowe
     label: GitHub
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/minxing-luo-5a7792330/
+    label: LinkedIn
   - icon: brands/google-scholar
     url: https://scholar.google.com/citations?user=cpIySUoAAAAJ&hl=en
     label: Google Scholar

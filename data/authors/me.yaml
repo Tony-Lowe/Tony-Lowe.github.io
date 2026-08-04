@@ -35,16 +35,19 @@ education:
     end: 2026-06-30
     summary: |
       Visual Computing and Intellectual Perception Lab.
+    logo: media/organizations/nankai-university.jpg
   - degree: BSc in Information Security
     institution: China University of Mining and Technology
     start: 2019-09-01
     end: 2023-06-30
+    logo: media/organizations/cumt.jpg
 experience:
   - role: Research Intern
     org: Ming Team, Ant Group
     start: 2026-01-01
     summary: |
       Conducting research in generative AI.
+    logo: media/organizations/ant-group.png
   - role: Research Intern
     org: Imaging Algorithm Center, vivo
     start: 2025-03-01
@@ -52,12 +55,7 @@ experience:
     summary: |
       - Led the development of TIGER, a diffusion-based, text-aware image super-resolution framework accepted to CVPR 2026.
       - Built real-world data pipelines and datasets for text image enhancement.
-  - role: Master's Researcher
-    org: Visual Computing and Intellectual Perception Lab, Nankai University
-    start: 2023-06-01
-    end: 2026-06-30
-    summary: |
-      Researched visual text generation, diffusion-based image editing, and visual localization.
+    logo: media/organizations/vivo.svg
 skills:
   - name: Research Areas
     items:

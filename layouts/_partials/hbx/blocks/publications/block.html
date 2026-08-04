@@ -23,7 +23,10 @@
       {{ $imagePath := index . "image" }}
       {{ $image := resources.Get $imagePath }}
       {{ $paperURL := index . "paper_url" }}
+      {{ $projectURL := index . "project_url" }}
       {{ $codeURL := index . "code_url" }}
+      {{ $weightsURL := index . "weights_url" }}
+      {{ $datasetURL := index . "dataset_url" }}
       <article class="grid overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-900 md:grid-cols-[22rem_1fr]">
         <a class="relative min-h-48 overflow-hidden bg-white" href="{{ $paperURL }}" target="_blank" rel="noopener" aria-label="Open paper: {{ $itemTitle }}">
           {{ with $image }}<img class="absolute h-full w-full object-contain p-2" src="{{ .RelPermalink }}" alt="Pipeline diagram from {{ $itemTitle }}">{{ end }}
@@ -34,7 +37,10 @@
           <p class="mt-2 text-gray-600 dark:text-gray-300">{{ index . "description" }}</p>
           <div class="mt-5 flex flex-wrap gap-3">
             {{ with $paperURL }}<a class="rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-700" href="{{ . }}" target="_blank" rel="noopener">Paper</a>{{ end }}
+            {{ with $projectURL }}<a class="rounded-lg bg-primary-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-700" href="{{ . }}" target="_blank" rel="noopener">Project Page</a>{{ end }}
             {{ with $codeURL }}<a class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 transition hover:border-primary-500 hover:text-primary-700 dark:border-gray-600 dark:text-gray-100 dark:hover:border-primary-300 dark:hover:text-primary-200" href="{{ . }}" target="_blank" rel="noopener">Code on GitHub</a>{{ end }}
+            {{ with $weightsURL }}<a class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 transition hover:border-primary-500 hover:text-primary-700 dark:border-gray-600 dark:text-gray-100 dark:hover:border-primary-300 dark:hover:text-primary-200" href="{{ . }}" target="_blank" rel="noopener">Model Weights</a>{{ end }}
+            {{ with $datasetURL }}<a class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-800 transition hover:border-primary-500 hover:text-primary-700 dark:border-gray-600 dark:text-gray-100 dark:hover:border-primary-300 dark:hover:text-primary-200" href="{{ . }}" target="_blank" rel="noopener">Dataset</a>{{ end }}
           </div>
         </div>
       </article>

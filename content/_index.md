@@ -33,6 +33,10 @@ sections:
           description: Two-stage scene text image super-resolution with glyph structure guidance.
           image: media/publications/tiger-pipeline.png
           paper_url: https://arxiv.org/abs/2510.21590
+          project_url: https://tony-lowe.github.io/TIGER_project_page/
+          code_url: https://github.com/OpenVeraTeam/TiGeSR
+          weights_url: https://huggingface.co/mxluocv/TiGeSR
+          dataset_url: https://huggingface.co/datasets/mxluocv/UZ-ST
         - title: Beyond Flat Text
           venue: ICCV Workshops 2025
           description: Dual self-inherited guidance for visual text generation.

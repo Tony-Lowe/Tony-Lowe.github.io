@@ -188,7 +188,7 @@
           {{/* Header row */}}
           <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
             <div class="flex items-start gap-3">
-              {{ with index $item "logo" }}{{ with resources.Get . }}<div class="flex h-12 w-20 shrink-0 items-center justify-center rounded-lg bg-white p-1 ring-1 ring-gray-100 dark:ring-white/10"><img class="max-h-full max-w-full object-contain" src="{{ .RelPermalink }}" alt="{{ printf "%s logo" (index $item "org") }}"></div>{{ end }}{{ end }}
+              {{ with $item.logo }}{{ partial "timeline-logo.html" (dict "path" . "name" $item.org) }}{{ end }}
               <div>
                 {{ with $item.location_and_dates }}
                 <h3 class="text-xl text-gray-900 dark:text-white"><strong>{{ index $item "org" }}</strong>, {{ . }}</h3>
@@ -332,7 +332,7 @@
           {{/* Header row */}}
           <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
             <div class="flex items-start gap-3">
-              {{ with index $item "logo" }}{{ with resources.Get . }}<div class="flex h-12 w-20 shrink-0 items-center justify-center rounded-lg bg-white p-1 ring-1 ring-gray-100 dark:ring-white/10"><img class="max-h-full max-w-full object-contain" src="{{ .RelPermalink }}" alt="{{ printf "%s logo" (index $item "institution") }}"></div>{{ end }}{{ end }}
+              {{ with $item.logo }}{{ partial "timeline-logo.html" (dict "path" . "name" $item.institution) }}{{ end }}
               <div>
                 {{ with $item.location_and_dates }}
                 <h3 class="text-xl text-gray-900 dark:text-white"><strong>{{ index $item "institution" }}</strong>, {{ . }}</h3>

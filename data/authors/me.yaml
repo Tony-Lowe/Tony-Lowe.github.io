@@ -5,15 +5,15 @@ name:
   display: Minxing Luo
   given: Minxing
   family: Luo
-role: Incoming Doctoral Researcher
+role: Incoming PhD Student
 bio: |
-  I am an incoming Doctoral Researcher at the Institute of Computer Science (*Institut für Informatik*), Georg-August-Universität Göttingen, working in the Research Group led by Prof. Dr. Alireza Modirshanechi (<https://scholar.google.ch/citations?user=ysDOYB8AAAAJ&hl=en>).
+  <address class="text-center not-italic"><a href="mailto:mxluocv@163.com">mxluocv@163.com</a> / <a href="mailto:mxluocv@gmail.com">mxluocv@gmail.com</a></address>
 
-  My research focuses on mathematical and theoretical approaches to cognitive science, particularly the modeling of human learning, curiosity, surprise, and decision-making through probabilistic modeling, Bayesian statistics, and simple behavioral experiments.
+  I am an incoming PhD student at the Institute of Computer Science (*Institut für Informatik*), Faculty of Mathematics and Computer Science, **University of Göttingen** (starting March 2027), supervised by **Prof. Dr. Alireza Modirshanechi**.
 
-  Previously, I received my M.Eng. in Computer Science and Technology from Nankai University (2026), and my B.Eng. from China University of Mining and Technology (2023). My prior academic training centered on applied mathematics, statistical modeling, digital typography design, 3D computer graphics, and human visual perception evaluation.
+  Previously, I received my M.Eng. in Computer Science and Technology from **Nankai University** (2026), and my B.Eng. from **China University of Mining and Technology** (2023). My prior academic training focused on applied mathematics, statistical modeling, digital typography design, 3D computer graphics, and human visual perception evaluation.
 affiliations:
-  - name: Institute of Computer Science, Georg-August-Universität Göttingen
+  - name: Institute of Computer Science, University of Göttingen
 links:
   - icon: brands/github
     url: https://github.com/Tony-Lowe
@@ -22,14 +22,13 @@ links:
     url: https://www.linkedin.com/in/minxing-luo-5a7792330/
     label: LinkedIn
 education:
-  - institution: Georg-August-Universität Göttingen
-    location_and_dates: "Göttingen, Germany (Planned: Mar. 2027 – Mar. 2030)"
-    degree: Doctoral Researcher, Institute of Computer Science
+  - institution: University of Göttingen
+    location_and_dates: Göttingen, Germany (Planned to start on Mar. 2027)
+    degree: Incoming PhD Student, Institute of Computer Science, Faculty of Mathematics and Computer Science
     summary: "Advisor: Prof. Dr. Alireza Modirshanechi"
   - institution: Nankai University
     location_and_dates: Tianjin, China (Sep. 2023 – Jun. 2026)
-    degree: M.Eng. in Computer Science and Technology, College of Computer Science
-    summary: "Focus: Digital typography design, font layout formatting, and human reading comfort evaluation"
+    degree: M.Eng. in Computer Science, College of Computer Science and Technology
     logo: media/organizations/nankai-university.jpg
   - institution: China University of Mining and Technology
     location_and_dates: Jiangsu, China (Aug. 2019 – Jun. 2023)
@@ -40,7 +39,6 @@ experience:
   - org: Alipay (Hangzhou) Digital Service Technology Co., Ltd.
     location_and_dates: Hangzhou, China (Jan. 2026 – Nov. 2026)
     role: Research Intern
-    summary: "Focus: UI font rendering, typographic style consistency, and user reading comfort assessment."
 awards:
   - title: National Scholarship
     date: '2021-12-01'

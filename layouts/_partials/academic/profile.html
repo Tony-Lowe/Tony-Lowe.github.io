@@ -1,0 +1,73 @@
+{{- $profile := site.Data.authors.me -}}
+<section id="profile" aria-labelledby="profile-name">
+  <div class="academic-intro">
+    <div class="academic-identity">
+      <h1 id="profile-name">{{ $profile.name.display }}</h1>
+      <p class="academic-role">{{ $profile.role }}</p>
+      {{ range $profile.affiliations }}<p class="academic-affiliation">{{ .name }}</p>{{ end }}
+      <address class="academic-contact">
+        {{- range $i, $email := $profile.emails }}{{ if $i }} / {{ end }}<a href="mailto:{{ $email }}">{{ $email }}</a>{{ end -}}
+      </address>
+      <div class="academic-social">
+        {{ range $profile.links }}<a href="{{ .url }}">{{ .label }}</a>{{ end }}
+      </div>
+    </div>
+    {{ with resources.Get "media/authors/me.jpg" }}
+      {{ $small := .Resize "160x webp q82" }}
+      {{ $medium := .Resize "320x webp q82" }}
+      {{ $large := .Resize "640x webp q82" }}
+      <figure class="academic-portrait">
+        <img src="{{ $medium.RelPermalink }}"
+             srcset="{{ $small.RelPermalink }} 160w, {{ $medium.RelPermalink }} 320w, {{ $large.RelPermalink }} 640w"
+             sizes="(max-width: 39rem) clamp(5rem, 21vw, 7.25rem), clamp(10.75rem, 22vw, 15rem)"
+             width="{{ $medium.Width }}" height="{{ $medium.Height }}" fetchpriority="high" alt="{{ $profile.name.display }}">
+      </figure>
+    {{ end }}
+  </div>
+  <div class="academic-bio bio-text">{{ $.RenderString (dict "display" "block") $profile.bio }}</div>
+</section>
+<section class="academic-section" id="research-interests" aria-labelledby="interests-title">
+  <h2 id="interests-title">Research Interests</h2>
+  <div class="academic-section-body">
+    <ul class="academic-interests">{{ range $profile.interests }}<li>{{ . }}</li>{{ end }}</ul>
+  </div>
+</section>
+{{ range slice (dict "id" "education" "title" "Education" "records" $profile.education) (dict "id" "experience" "title" "Experience" "records" $profile.experience) }}
+  <section class="academic-section" id="{{ .id }}" aria-labelledby="{{ .id }}-title">
+    <h2 id="{{ .id }}-title">{{ .title }}</h2>
+    <div class="academic-section-body">
+      <ol class="academic-records">
+        {{ range .records }}
+          {{ $name := or .institution .org }}
+          <li class="academic-record">
+            {{ if .logo }}{{ partial "timeline-logo.html" (dict "path" .logo "name" .institution "class" "academic-logo") }}{{ end }}
+            <h3><strong>{{ $name }}</strong><span class="academic-place">, {{ .location_and_dates }}</span></h3>
+            {{ with .degree }}<p>{{ . }}</p>{{ end }}
+            {{ with .role }}<p><em>{{ . }}</em></p>{{ end }}
+            {{ with .summary }}<p>{{ . }}</p>{{ end }}
+          </li>
+        {{ end }}
+      </ol>
+    </div>
+  </section>
+{{ end }}
+<section class="academic-section" id="honors" aria-labelledby="honors-title">
+  <h2 id="honors-title">Selected Honors</h2>
+  <div class="academic-section-body">
+    <ul class="academic-records">
+      {{ range sort $profile.awards "date" "desc" }}
+        <li class="academic-record">
+          <h3>{{ .title }}</h3>
+          <p class="academic-meta">{{ .awarder }} · {{ time.Format "January 2006" .date }}</p>
+          <p>{{ .summary }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+<section class="academic-section" id="languages" aria-labelledby="languages-title">
+  <h2 id="languages-title">Languages</h2>
+  <div class="academic-section-body">
+    {{ range $profile.languages }}<p><strong>{{ .name }}</strong> — {{ .description }}</p>{{ end }}
+  </div>
+</section>

@@ -5,78 +5,47 @@ name:
   display: Minxing Luo
   given: Minxing
   family: Luo
-status:
-  icon: "🔬"
-role: Research Intern at Ming Team, Ant Group | Recent MSc Graduate
-bio: >
-  I am a recent MSc graduate from Nankai University, interested in generative
-  vision, diffusion models, visual text generation, image editing, and
-  text-aware image super-resolution. My work aims to make generated and
-  enhanced imagery more structurally faithful and visually convincing.
+role: Incoming PhD Student
+emails:
+  - mxluocv@163.com
+  - mxluocv@gmail.com
+bio: |
+  I am an incoming PhD student at the Institute of Computer Science (*Institut für Informatik*), Faculty of Mathematics and Computer Science, **University of Göttingen** (starting March 2027), supervised by **Prof. Dr. Alireza Modirshanechi**.
+
+  Previously, I received my M.Eng. in Computer Science and Technology from **Nankai University** (2026), and my B.Eng. from **China University of Mining and Technology** (2023). My prior academic training focused on applied mathematics, statistical modeling, digital typography design, 3D computer graphics, and human visual perception evaluation.
 affiliations:
-  - name: Ming Team, Ant Group
+  - name: Institute of Computer Science, University of Göttingen
 links:
-  - icon: at-symbol
-    url: mailto:mxluocv@gmail.com
-    label: E-mail Me
   - icon: brands/github
     url: https://github.com/Tony-Lowe
     label: GitHub
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/minxing-luo-5a7792330/
     label: LinkedIn
-  - icon: brands/google-scholar
-    url: https://scholar.google.com/citations?user=cpIySUoAAAAJ&hl=en
-    label: Google Scholar
+interests:
+  - Computational Cognitive Science & Mathematical Psychology
+  - Human Learning, Curiosity, Surprise, and Decision-Making
+  - Quantitative Behavioral Data Analysis & Human Perceptual Evaluation
 education:
-  - degree: MSc in Computer Science
-    institution: Nankai University
-    start: 2023-09-01
-    end: 2026-06-30
-    summary: |
-      Visual Computing and Intellectual Perception Lab.
+  - institution: University of Göttingen
+    location_and_dates: Göttingen, Germany (Planned to start on Mar. 2027)
+    degree: Incoming PhD Student, Institute of Computer Science, Faculty of Mathematics and Computer Science
+    summary: "Advisor: Prof. Dr. Alireza Modirshanechi"
+    logo: media/organizations/university-of-goettingen.png
+  - institution: Nankai University
+    location_and_dates: Tianjin, China (Sep. 2023 – Jun. 2026)
+    degree: M.Eng. in Computer Science, College of Computer Science and Technology
     logo: media/organizations/nankai-university.jpg
-  - degree: BSc in Information Security
-    institution: China University of Mining and Technology
-    start: 2019-09-01
-    end: 2023-06-30
+  - institution: China University of Mining and Technology
+    location_and_dates: Jiangsu, China (Aug. 2019 – Jun. 2023)
+    degree: B.Eng., College of Computer Science and Technology
+    summary: "Focus: 3D geometric shape modeling for computer graphics and animation"
     logo: media/organizations/cumt.jpg
 experience:
-  - role: Research Intern
-    org: Ming Team, Ant Group
-    start: 2026-01-01
-    summary: |
-      Conducting research in generative AI.
+  - org: Alipay (Hangzhou) Digital Service Technology Co., Ltd.
+    location_and_dates: Hangzhou, China (Jan. 2026 – Nov. 2026)
+    role: Research Intern
     logo: media/organizations/ant-group.png
-  - role: Research Intern
-    org: Imaging Algorithm Center, vivo
-    start: 2025-03-01
-    end: 2025-12-31
-    summary: |
-      - Led the development of TIGER, a diffusion-based, text-aware image super-resolution framework accepted to CVPR 2026.
-      - Built real-world data pipelines and datasets for text image enhancement.
-    logo: media/organizations/vivo.svg
-skills:
-  - name: Research Areas
-    items:
-      - label: Generative Vision
-        level: 5
-      - label: Diffusion Models
-        level: 5
-      - label: Visual Text Generation
-        level: 5
-      - label: Image Editing & Enhancement
-        level: 4
-  - name: Technical Skills
-    color: '#4f46e5'
-    color_border: '#818cf8'
-    items:
-      - label: Python & PyTorch
-        level: 5
-      - label: C++
-        level: 4
-      - label: LaTeX
-        level: 4
 awards:
   - title: National Scholarship
     date: '2021-12-01'
@@ -90,3 +59,8 @@ awards:
     icon: trophy
     summary: |
       Honored for interdisciplinary modeling and problem-solving.
+languages:
+  - name: Chinese
+    description: Native speaker
+  - name: English
+    description: "C1 (PTE Academic: 88)"

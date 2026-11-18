@@ -93,7 +93,7 @@
       {{ end }}
 
       {{ if or $role $org }}
-        {{ $experience = $experience | append (dict "role" $role "org" $org "start" $start "end" $end "summary" $summary "icon" $icon "logo" $logo "tags" $tags "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
+        {{ $experience = $experience | append (dict "role" $role "org" $org "start" $start "end" $end "summary" $summary "icon" $icon "logo" $logo "location_and_dates" .location_and_dates "tags" $tags "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -141,7 +141,7 @@
       {{ end }}
 
       {{ if or $degree $institution }}
-        {{ $education = $education | append (dict "degree" $degree "institution" $institution "start" $start "end" $end "summary" $summary "icon" $icon "logo" $logo "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
+        {{ $education = $education | append (dict "degree" $degree "institution" $institution "start" $start "end" $end "summary" $summary "icon" $icon "logo" $logo "location_and_dates" .location_and_dates "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
       {{ end }}
     {{ end }}
   {{ end }}
@@ -190,6 +190,10 @@
             <div class="flex items-start gap-3">
               {{ with index $item "logo" }}{{ with resources.Get . }}<div class="flex h-12 w-20 shrink-0 items-center justify-center rounded-lg bg-white p-1 ring-1 ring-gray-100 dark:ring-white/10"><img class="max-h-full max-w-full object-contain" src="{{ .RelPermalink }}" alt="{{ printf "%s logo" (index $item "org") }}"></div>{{ end }}{{ end }}
               <div>
+                {{ with $item.location_and_dates }}
+                <h3 class="text-xl text-gray-900 dark:text-white"><strong>{{ index $item "org" }}</strong>, {{ . }}</h3>
+                <p class="text-primary-600 dark:text-primary-400 font-medium mt-1"><em>{{ index $item "role" }}</em></p>
+                {{ else }}
                 {{/* Role/Position */}}
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                   {{ index $item "role" }}
@@ -198,9 +202,11 @@
                 <p class="text-primary-600 dark:text-primary-400 font-medium mt-1">
                   {{ index $item "org" }}
                 </p>
+                {{ end }}
               </div>
             </div>
 
+            {{ if not $item.location_and_dates }}
             {{/* Date badge */}}
             <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -229,6 +235,7 @@
                 {{end}}
               </time>
             </div>
+            {{ end }}
           </div>
 
           {{/* Description */}}
@@ -327,6 +334,10 @@
             <div class="flex items-start gap-3">
               {{ with index $item "logo" }}{{ with resources.Get . }}<div class="flex h-12 w-20 shrink-0 items-center justify-center rounded-lg bg-white p-1 ring-1 ring-gray-100 dark:ring-white/10"><img class="max-h-full max-w-full object-contain" src="{{ .RelPermalink }}" alt="{{ printf "%s logo" (index $item "institution") }}"></div>{{ end }}{{ end }}
               <div>
+                {{ with $item.location_and_dates }}
+                <h3 class="text-xl text-gray-900 dark:text-white"><strong>{{ index $item "institution" }}</strong>, {{ . }}</h3>
+                <p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1">{{ index $item "degree" }}</p>
+                {{ else }}
                 {{/* Degree */}}
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">
                   {{ index $item "degree" }}
@@ -335,9 +346,11 @@
                 <p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1">
                   {{ index $item "institution" }}
                 </p>
+                {{ end }}
               </div>
             </div>
 
+            {{ if not $item.location_and_dates }}
             {{/* Date badge */}}
             <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -366,6 +379,7 @@
                 {{end}}
               </time>
             </div>
+            {{ end }}
           </div>
 
           {{/* Description */}}

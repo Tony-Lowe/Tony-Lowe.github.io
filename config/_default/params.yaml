@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "MSc Graduate in Generative AI and Computer Vision"
+    tagline: "Incoming Doctoral Researcher"
     # Site meta description for search engines and social sharing
-    description: "Personal academic homepage of Minxing Luo, a recent MSc graduate interested in generative vision, diffusion models, and visual text generation."
+    description: "My research focuses on mathematical and theoretical approaches to cognitive science, particularly the modeling of human learning, curiosity, surprise, and decision-making through probabilistic modeling, Bayesian statistics, and simple behavioral experiments."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: ""                         # Twitter/X handle for Twitter Cards (without @)
@@ -95,9 +95,7 @@ hugoblox:
     language_switcher: true
     # Call-to-action button
     cta:
-      enable: true
-      text: "Download CV"
-      url: "uploads/resume.pdf"
+      enable: false
 
   # ────────────────────────────────────────────────────────────────────────────
   # FOOTER

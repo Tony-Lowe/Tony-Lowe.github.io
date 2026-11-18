@@ -31,6 +31,7 @@ education:
     location_and_dates: Göttingen, Germany (Planned to start on Mar. 2027)
     degree: Incoming PhD Student, Institute of Computer Science, Faculty of Mathematics and Computer Science
     summary: "Advisor: Prof. Dr. Alireza Modirshanechi"
+    logo: media/organizations/university-of-goettingen.png
   - institution: Nankai University
     location_and_dates: Tianjin, China (Sep. 2023 – Jun. 2026)
     degree: M.Eng. in Computer Science, College of Computer Science and Technology
@@ -44,6 +45,7 @@ experience:
   - org: Alipay (Hangzhou) Digital Service Technology Co., Ltd.
     location_and_dates: Hangzhou, China (Jan. 2026 – Nov. 2026)
     role: Research Intern
+    logo: media/organizations/ant-group.png
 awards:
   - title: National Scholarship
     date: '2021-12-01'

@@ -3,11 +3,12 @@
   {{ $raster := in (slice "image/jpeg" "image/png" "image/webp") $image.MediaType.Type }}
   {{ if $raster }}
     {{/* The image box is 72 × 40 CSS pixels after padding. Supply a 3× raster. */}}
-    {{ $image = $image.Fit "216x120 webp q85" }}
+    {{ $format := cond (eq $image.MediaType.Type "image/png") "png" "webp q85" }}
+    {{ $image = $image.Fit (printf "216x120 %s" $format) }}
   {{ end }}
   <div class="{{ $.class | default "timeline-logo flex h-12 w-20 shrink-0 items-center justify-center rounded-lg bg-white p-1 ring-1 ring-gray-100 dark:ring-white/10" }}">
     <img class="max-h-full max-w-full object-contain" src="{{ $image.RelPermalink }}"
          {{ if $raster }}width="{{ $image.Width }}" height="{{ $image.Height }}"{{ end }}
-         loading="lazy" decoding="async" alt="{{ printf "%s logo" $.name }}">
+         loading="lazy" decoding="async" alt="{{ with $.name }}{{ . }} logo{{ end }}">
   </div>
 {{ end }}

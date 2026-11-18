@@ -40,7 +40,7 @@
         {{ range .records }}
           {{ $name := or .institution .org }}
           <li class="academic-record">
-            {{ with .logo }}{{ partial "timeline-logo.html" (dict "path" . "name" $name "class" "academic-logo") }}{{ end }}
+            {{ if .logo }}{{ partial "timeline-logo.html" (dict "path" .logo "name" .institution "class" "academic-logo") }}{{ end }}
             <h3><strong>{{ $name }}</strong><span class="academic-place">, {{ .location_and_dates }}</span></h3>
             {{ with .degree }}<p>{{ . }}</p>{{ end }}
             {{ with .role }}<p><em>{{ . }}</em></p>{{ end }}

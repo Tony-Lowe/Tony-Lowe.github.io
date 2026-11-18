@@ -1,0 +1,57 @@
+{{- $profile := site.Data.authors.me -}}
+{{- $identity := site.Params.hugoblox.identity -}}
+{{- $pageTitle := cond .IsHome $profile.name.display (printf "%s | %s" (i18n "page_not_found" | default "Page not found") $profile.name.display) -}}
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ $pageTitle }}</title>
+  <meta name="description" content="{{ $identity.description }}">
+  {{ if .IsHome }}
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="{{ $pageTitle }}">
+    <meta property="og:description" content="{{ $identity.description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+  {{ else }}
+    <meta name="robots" content="noindex">
+  {{ end }}
+  {{ with site.Home.OutputFormats.Get "rss" }}<link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="{{ $profile.name.display }}">{{ end }}
+  {{ with resources.Get "media/authors/me.jpg" }}
+    {{ $icon := .Resize "48x48 png" }}
+    <link rel="icon" type="image/png" href="{{ $icon.RelPermalink }}">
+    {{ if $.IsHome }}
+      {{ $card := .Resize "600x600 jpg q80" }}
+      <meta property="og:image" content="{{ $card.Permalink }}">
+      <meta property="og:image:alt" content="{{ $profile.name.display }}">
+    {{ end }}
+  {{ end }}
+  {{ with resources.Get "css/academic-profile.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+  {{ end }}
+</head>
+<body class="academic-site">
+  <header class="academic-masthead">
+    <a class="academic-wordmark" href="{{ site.Home.RelPermalink }}">{{ $profile.name.display }}</a>
+    <nav class="academic-nav">
+      <a href="{{ site.Home.RelPermalink }}#research-interests">Research Interests</a>
+      <a href="{{ site.Home.RelPermalink }}#education">Education</a>
+      <a href="{{ site.Home.RelPermalink }}#experience">Experience</a>
+    </nav>
+  </header>
+  <main class="academic-page" id="academic-profile" {{ if .IsHome }}data-pagefind-body{{ end }}>
+    {{ if .IsHome }}
+      {{ partial "academic/profile.html" . }}
+    {{ else }}
+      <section class="academic-error">
+        <h1>{{ i18n "page_not_found" | default "Page not found" }}</h1>
+        <a href="{{ site.Home.RelPermalink }}">{{ site.Home.Title }}</a>
+      </section>
+    {{ end }}
+  </main>
+  <footer class="academic-footer">
+    © {{ now.Year }} {{ $profile.name.display }} · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="license">CC BY NC ND 4.0</a>
+  </footer>
+</body>
+</html>

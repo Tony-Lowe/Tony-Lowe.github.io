@@ -3,22 +3,7 @@ title: 'Home'
 date: 2026-07-26
 type: landing
 
-design:
-  spacing: '4rem'
-
-sections:
-  - block: biography
-    content:
-      username: me
-    design:
-      show_status: false
-      banner:
-        filename: kalen-emsley-Bkci_8qcdvQ-unsplash.jpg
-      biography:
-        style: 'text-align: left; font-size: 0.92em; max-width: 44rem;'
-      avatar:
-        size: large
-        shape: rounded
+# sections:
 #   - block: publications
 #     content:
 #       title: Selected Publications
@@ -46,29 +31,4 @@ sections:
 #           image: media/publications/rotationdrag-pipeline.png
 #           paper_url: https://arxiv.org/abs/2401.06442
 #           code_url: https://github.com/Tony-Lowe/RotationDrag
-  - block: markdown
-    id: research-interests
-    content:
-      title: Research Interests
-      text: |
-        - Computational Cognitive Science & Mathematical Psychology
-        - Human Learning, Curiosity, Surprise, and Decision-Making
-        - Probabilistic & Bayesian Statistical Modeling
-        - Quantitative Behavioral Data Analysis & Human Perceptual Evaluation
-  - block: experience
-    content:
-      username: me
-    design:
-      date_format: 'January 2006'
-      is_education_first: true
-  - block: awards
-    content:
-      title: Selected Honors
-      username: me
-  - block: markdown
-    content:
-      title: Languages
-      text: |
-        **Chinese** — Native speaker<br>
-        **English** — C1 (PTE Academic: 88)
 ---

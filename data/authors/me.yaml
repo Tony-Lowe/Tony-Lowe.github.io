@@ -6,9 +6,10 @@ name:
   given: Minxing
   family: Luo
 role: Incoming PhD Student
+emails:
+  - mxluocv@163.com
+  - mxluocv@gmail.com
 bio: |
-  <address class="text-center not-italic"><a href="mailto:mxluocv@163.com">mxluocv@163.com</a> / <a href="mailto:mxluocv@gmail.com">mxluocv@gmail.com</a></address>
-
   I am an incoming PhD student at the Institute of Computer Science (*Institut für Informatik*), Faculty of Mathematics and Computer Science, **University of Göttingen** (starting March 2027), supervised by **Prof. Dr. Alireza Modirshanechi**.
 
   Previously, I received my M.Eng. in Computer Science and Technology from **Nankai University** (2026), and my B.Eng. from **China University of Mining and Technology** (2023). My prior academic training focused on applied mathematics, statistical modeling, digital typography design, 3D computer graphics, and human visual perception evaluation.
@@ -21,6 +22,11 @@ links:
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/minxing-luo-5a7792330/
     label: LinkedIn
+interests:
+  - Computational Cognitive Science & Mathematical Psychology
+  - Human Learning, Curiosity, Surprise, and Decision-Making
+  - Probabilistic & Bayesian Statistical Modeling
+  - Quantitative Behavioral Data Analysis & Human Perceptual Evaluation
 education:
   - institution: University of Göttingen
     location_and_dates: Göttingen, Germany (Planned to start on Mar. 2027)
@@ -52,3 +58,8 @@ awards:
     icon: trophy
     summary: |
       Honored for interdisciplinary modeling and problem-solving.
+languages:
+  - name: Chinese
+    description: Native speaker
+  - name: English
+    description: "C1 (PTE Academic: 88)"
